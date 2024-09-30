@@ -1,0 +1,13 @@
+const mongoose = require('mongoose');
+
+// Define the Auth schema with name, username, email, and password
+const AuthSchema = mongoose.Schema({
+    name: String,
+    email: String,
+    password: String, // This will store the hashed password
+    age: Number,
+   
+
+});
+
+module.exports = mongoose.model('UserRanuData', AuthSchema);
